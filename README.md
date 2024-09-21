@@ -2,7 +2,7 @@
 
 ### Projeto de Inteligência Artificial para Detecção de Nível de Seca no Solo
 
-![Soil Drought Detection](link_para_uma_imagem_representativa_do_projeto.png)
+![Soil Drought Detection](/src/img/logo.png)
 
 ## Descrição
 Este projeto visa criar um modelo de aprendizado profundo capaz de detectar e classificar o nível de seca em imagens de solo, utilizando redes neurais convolucionais (CNNs). A aplicação prática envolve o monitoramento agrícola e ambiental, ajudando na tomada de decisões relacionadas ao manejo de recursos hídricos e ao controle da seca.
