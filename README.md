@@ -1,14 +1,15 @@
-# Soil Drought Detection IA
+# Melanoma Classification IA
 
-### Projeto de Inteligência Artificial para Detecção de Nível de Seca no Solo
+### Projeto de Inteligência Artificial para Classificação de Melanoma a partir de Imagens de Pele
 
 ![Soil Drought Detection](/src/img/logo.png)
 
 ## Descrição
-Este projeto visa criar um modelo de aprendizado profundo capaz de detectar e classificar o nível de seca em imagens de solo, utilizando redes neurais convolucionais (CNNs). A aplicação prática envolve o monitoramento agrícola e ambiental, ajudando na tomada de decisões relacionadas ao manejo de recursos hídricos e ao controle da seca.
+Este projeto utiliza técnicas de aprendizado profundo para classificar tipos de melanoma (câncer de pele) em imagens de lesões cutâneas. O objetivo é auxiliar no diagnóstico precoce e na diferenciação entre lesões benignas e malignas, contribuindo para o tratamento e prevenção do câncer de pele.
 
 ## Objetivo
-Desenvolver uma inteligência artificial treinada com uma base de dados de imagens de solo obtidas do Kaggle para detectar o nível de seca com alta precisão. 
+Desenvolver um modelo de Inteligência Artificial capaz de identificar diferentes tipos de melanoma em imagens de pele, utilizando uma base de dados do Kaggle. O sistema ajudará profissionais de saúde a tomar decisões mais informadas e precisas.
+. 
 
 ## Equipe de Desenvolvimento
 - **Eric Klaus Brenner Melo e Santos**
@@ -18,12 +19,12 @@ Desenvolver uma inteligência artificial treinada com uma base de dados de image
 ## Tecnologias Utilizadas
 - **Linguagem:** Python
 - **Frameworks e Bibliotecas:** 
-  - TensorFlow / Keras
+  - TensorFlow
   - OpenCV
-  - Scikit-learn
+  - Sci-kit-learn
   - Pandas
   - NumPy
-- **Dataset:** [Kaggle Soil Dataset](link_para_o_dataset)
+- **Dataset:** [Kaggle Soil Dataset](https://www.kaggle.com/datasets/andrewmvd/isic-2019)
 
 ## Estrutura do Projeto
 - `data/` : Contém os dados brutos e pré-processados (o conteúdo da pasta foi ignorado pelo gitignore).
@@ -38,6 +39,6 @@ Possuir os arquivos da base do Kaggle no diretório data/ ;
 Certifique-se de que você tem o Python 3.7+ instalado. Em seguida, clone o repositório e instale as dependências:
 
 ```bash
-git clone https://github.com/seu_usuario/soil-drought-detection-IA.git
-cd soil-drought-detection-IA
+git clone https://github.com/ericklaus16/melanoma_classification_ai
+cd melanoma_classification_ia
 pip install -r requirements.txt
