@@ -2,7 +2,7 @@
 
 ### Projeto de Inteligência Artificial para Classificação de Melanoma a partir de Imagens de Pele
 
-![Soil Drought Detection](/src/img/logo.png)
+![Melanoma Detector](/src/img/logo.png)
 
 ## Descrição
 Este projeto utiliza técnicas de aprendizado profundo para classificar tipos de melanoma (câncer de pele) em imagens de lesões cutâneas. O objetivo é auxiliar no diagnóstico precoce e na diferenciação entre lesões benignas e malignas, contribuindo para o tratamento e prevenção do câncer de pele.
@@ -24,7 +24,7 @@ Desenvolver um modelo de Inteligência Artificial capaz de identificar diferente
   - Sci-kit-learn
   - Pandas
   - NumPy
-- **Dataset:** [Kaggle Soil Dataset](https://www.kaggle.com/datasets/andrewmvd/isic-2019)
+- **Dataset:** [Skin Lesion Images for Melanoma Classification](https://www.kaggle.com/datasets/andrewmvd/isic-2019)
 
 ## Estrutura do Projeto
 - `data/` : Contém os dados brutos e pré-processados (o conteúdo da pasta foi ignorado pelo gitignore).
