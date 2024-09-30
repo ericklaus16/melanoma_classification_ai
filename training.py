@@ -3,7 +3,7 @@ import cv2
 import numpy as np
 import pandas as pd
 import tensorflow as tf
-from tensorflow.keras import layers, models
+from keras import layers, models
 from sklearn.model_selection import train_test_split
 
 # Configurações básicas
@@ -22,6 +22,7 @@ def load_images(image_dir, labels_df, img_size):
         img_path = os.path.join(image_dir, row['image'] + '.jpg')  # Adicionando extensão da imagem
         image = cv2.imread(img_path)
         if image is not None:
+            print(img_path)
             # Redimensionar a imagem
             image = cv2.resize(image, (img_size, img_size))
             images.append(image)
