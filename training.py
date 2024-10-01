@@ -35,7 +35,7 @@ def load_images(image_dir, labels_df, img_size):
     return images, labels
 
 # Carregar as imagens e rótulos
-image_dir = './data/ISIC_2019_Training_Input/'
+image_dir = './data/ISIC_2019_Training_Input'
 images, labels = load_images(image_dir, labels_df, IMG_SIZE)
 
 # Normalizar as imagens (valores entre 0 e 1)
@@ -68,4 +68,4 @@ test_loss, test_acc = model.evaluate(X_test, y_test)
 print(f'Teste Acurácia: {test_acc}')
 
 # Salvar o modelo treinado para usar posteriormente
-model.save('melanoma_model_v2.h5')
+model.save('melanoma_model_v2.keras')
