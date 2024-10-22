@@ -1,4 +1,9 @@
 data/*
 new_env/*
-melanoma_model_v3.keras
-melanoma_model_v4.keras
+
+relatorio.aux
+relatorio.fdb_latexmk
+relatorio.fls
+relatorio.log
+relatorio.pdf
+relatorio.synctex.gz
