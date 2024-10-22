@@ -11,7 +11,7 @@ from flask_cors import CORS
 
 app = Flask(__name__)
 CORS(app)
-model = tf.keras.models.load_model('melanoma_model_v2.keras')
+model = tf.keras.models.load_model('melanoma_model_v4.keras')
 
 # Função para processar a imagem e prepará-la para o modelo
 def preprocess_image(image_path, img_size):

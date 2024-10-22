@@ -7,9 +7,9 @@ from keras import layers, models
 from sklearn.model_selection import train_test_split
 
 # Configurações básicas
-IMG_SIZE = 128  # Tamanho das imagens (128x128 pixels)
+IMG_SIZE = 128 # Tamanho das imagens (128x128 pixels)
 BATCH_SIZE = 32  # Tamanho do lote
-EPOCHS = 20  # Número de épocas de treinamento
+EPOCHS = 40  # Número de épocas de treinamento
 
 # Carregar a planilha
 labels_df = pd.read_csv('./data/ISIC_2019_Training_GroundTruth.csv')
@@ -54,11 +54,12 @@ model = models.Sequential([
     layers.MaxPooling2D((2, 2)),
     layers.Flatten(),
     layers.Dense(128, activation='relu'),
-    layers.Dense(9, activation='sigmoid')  # 9 saídas para MEL, NV, BCC, AK, BKL, DF, VASC, SCC, UNK
+    layers.Dense(9, activation='binary_focal_loss')  # 9 saídas para MEL, NV, BCC, AK, BKL, DF, VASC, SCC, UNK
 ])
 
 # Compilar o modelo
-model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy'])
+optimizer = tf.keras.optimizers.Adam(learning_rate=0.0001)
+model.compile(optimizer=optimizer, loss='binary_crossentropy', metrics=['accuracy'])
 
 # Treinar o modelo
 history = model.fit(X_train, y_train, epochs=EPOCHS, batch_size=BATCH_SIZE, validation_split=0.1)
@@ -68,4 +69,4 @@ test_loss, test_acc = model.evaluate(X_test, y_test)
 print(f'Teste Acurácia: {test_acc}')
 
 # Salvar o modelo treinado para usar posteriormente
-model.save('melanoma_model_v2.keras')
+model.save('melanoma_model_v5.keras')
